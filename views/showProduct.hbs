@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Product</title>
+</head>
+{{> header}}
+
+<body>
+    <br><br>
+    <h1 id="titleShow">Show Product</h3><br>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Product Name</th>
+                <th scope="col">Color</th>
+                <th scope="col">Age</th>
+                <th scope="col">Category</th>
+                <th scope="col">Price</th>
+                <th scope="col">Menu</th>
+            </tr>
+        </thead>
+        {{#each model}}
+        <tbody>
+            <tr>
+                <td>{{productName}}</td>
+                <td>{{color}}</td>
+                <td>{{age}}</td>
+                <td>{{category}}</td>
+                <td>{{price}}</td>
+                <td>
+                    <form action="/findUpdate" method="POST">
+                        <input type="hidden" name="id" value="{{_id}}">
+                        <input type="submit" value="Update" class="menuBtn">
+                    </form>
+                    <form action="/findDelete" method="POST">
+                        <input type="hidden" name="id" value="{{_id}}">
+                        <input type="submit" value="Delete" class="menuBtn" onclick="return confirmDelete('{{productName}}')">
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+        {{/each}}
+    </table>
+    <br><br>
+</body>
+{{> footer}}
+
+</html>

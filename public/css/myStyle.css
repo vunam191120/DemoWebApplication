@@ -1,0 +1,191 @@
+/* Header */
+.jumbotron{
+    background-image: url(../images/cover.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: fit-content;
+    margin-bottom: 0;
+}
+
+.navbar{
+    text-align: center;
+}
+
+/* .headerToy{
+    color: #F8C476;
+    font-size: 45px;
+    text-align: center;
+} */
+
+/* Footer */
+#about{
+    height: 515px;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 15%;
+}
+
+#imgAbout{
+    width: 40%;
+    height: fit-content;
+    margin-left: 10%;
+}
+
+#imgAbout, img{
+    float: left;
+}
+
+#txtForAbout{
+    width: 30%;
+    height: 80%;
+    margin-left: 53%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #343A40;
+}
+
+#contact a{
+    background-color: #343A40;
+    text-decoration: none;
+    padding: 7px;
+    color: #e7e7e7;
+    font-weight: 100;
+}
+
+#getInTouch{
+    height: 440px;
+    width: 100%;
+    background-color: #343A40;
+}
+
+#imgGit{
+    float: right;
+    height: 100%;
+    width: 40%;
+    margin-right: 5%;
+}
+
+#imgGit img{
+    height: 100%;
+    width: 80%;
+}
+
+#txtForGit{
+    padding-top: 3%;
+    width: 40%;
+    height: 80%;
+    margin-left: 10%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    text-align: center;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+/* Show */
+#titleShow{
+    color: #212529;
+    text-align: center;
+    font-size: 40px;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.menuBtn{
+    float: left;
+}
+
+thead{
+    font-size: 25px;
+    color: rgba(255,255,255,.5);
+}
+tbody{
+    font-size: 18px;
+}
+
+/* Add */
+
+#addForm{
+    text-align: left;
+    border: solid 1px black;
+    margin-top: 2%;
+    height: 450px;
+    width: 300px;
+    margin-left: 40%;
+    display: inline-block;
+    padding: 2%;
+}
+
+#btnAdd{
+    margin-top: 5%;
+    margin-left: 25%;
+}
+
+#addForm p{
+    text-align: center;
+}
+
+/* Search */
+
+#searchForm{
+    border: solid 1px black;
+    height: fit-content;
+    width: 400px;
+    margin-left: 35%;
+    margin-top: 3%;
+    padding: 1%;
+}
+
+#searchTxt{
+    text-align: center;
+}
+
+/* Update */
+#updateForm{
+    text-align: left;
+    border: solid 1px black;
+    margin-top: 2%;
+    height: 450px;
+    width: 300px;
+    margin-left: 40%;
+    display: inline-block;
+    padding: 2%;
+}
+
+#updateTxt{
+    text-align: center;
+}
+
+#btnUpdate{
+    margin-left: 40%;
+}

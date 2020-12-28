@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Product</title>
+</head>
+{{> header}}
+
+<body>
+
+    <form id="searchForm" action="/doSearch" method="POST">
+        <p id="searchTxt">Searching for Product</p>
+        <label for="searchName">Product Name:</label>
+        <input type="text" name="txtSearch" id="searchName">
+        <input id="btnSearch" type="submit" value="Search">
+        <br>
+        <label>Result:</label>
+        <ul>
+            {{#each proSearch}}
+            <li>{{productName}}-{{color}}-{{age}}-{{category}}-{{price}}</li>
+            {{/each}}
+        </ul>
+    </form>
+</body>
+{{> footer}}
+
+</html>

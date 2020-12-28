@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+</head>
+{{> header}}
+
+<body>
+
+    <form id="addForm" action="/doAdd" method="POST">
+        <p>Add New Product</p>
+        <div>
+            <label for="proName">Product Name:</label><br>
+            <input type="text" name="txtName" id="proName">
+        </div>
+        <div>
+            <label for="color">Color:</label><br>
+            <input type="text" name="txtColor" id="color">
+        </div>
+        <div>
+            <label for="age">Age:</label><br>
+            <input type="number" name="txtAge">
+        </div>
+        <div>
+            <label for="category">Category:</label><br>
+            <input type="text" name="txtCate">
+        </div>
+        <div>
+            <label for="price">Price:</label><br>
+            <input type="text" name="txtPrice"><br>
+        </div>
+
+        <input id="btnAdd" type="submit" value="Add Product">
+    </form>
+</body>
+
+<br><br><br>
+{{> footer}}
+
+</html>

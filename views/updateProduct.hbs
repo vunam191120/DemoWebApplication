@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Product</title>
+    <script src="js/myScripts.js"></script>
+
+</head>
+{{> header}}
+
+<body>
+
+    <form id="updateForm" action="/doUpdate" method="POST">
+        <p id="updateTxt">Update Product</p>
+        {{#each findUpdate}}
+        <label for="proNameTb">Product Name:</label><br>
+        <input type="text" value="{{productName}}" name="name" id="proNamTb"><br>
+        <label for="colorTb">Color:</label><br>
+        <input type="text" value="{{color}}" name="color" id="colorTb"><br>
+        <label for="ageTb">Age:</label><br>
+        <input type="text" value="{{age}}" name="age" id="ageTb"></br>
+        <label for="categoryTb">Category:</label><br>
+        <input type="text" value="{{category}}" name="cate" id="categoryTb"><br>
+        <label for="priceTb">Price:</label><br>
+        <input type="text" value="{{price}}" name="price" id="priceTb"><br><br>
+        <input type="hidden" value="{{_id}}" name="id">
+        <input id="btnUpdate" type="submit" value="Update">
+        {{/each}}
+    </form>
+
+</body>
+{{> footer}}
+
+</html>
